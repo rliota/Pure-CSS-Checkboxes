@@ -19,6 +19,10 @@ input[type="checkbox"]{
   cursor: pointer;
 }
 
+input[type="checkbox"]:checked:focus {
+  outline: none;
+}
+
 input[type="checkbox"]:checked:after,
 input[type="checkbox"]:checked::after{
   content: "\1F4A9";
@@ -27,9 +31,4 @@ input[type="checkbox"]:checked::after{
   bottom: 0.15em;
   display: inline-block;
   color: #000000;
-}
-
-input[type="checkbox"]:checked:after:focus,
-input[type="checkbox"]:checked::after:focus {
-  outline: none;
 }
