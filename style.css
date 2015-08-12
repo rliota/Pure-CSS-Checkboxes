@@ -14,13 +14,13 @@ input[type="checkbox"]{
   width: 1em;
   background-color: #ffffff;
   border: solid 1px #dddddd;
-  margin: 0 0.2em 0 0;
+  margin: 0 0.2em;
 
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked:focus {
-  outline: none;
+input[type="checkbox"]:first-child{
+  margin: 0 0.2em 0 0;
 }
 
 input[type="checkbox"]:checked:after,
@@ -28,7 +28,12 @@ input[type="checkbox"]:checked::after{
   content: "\1F4A9";
   font-size: 0.8em;
   position: relative;
-  bottom: 0.15em;
+  bottom: 0.25em;
   display: inline-block;
   color: #000000;
+}
+
+input[type="checkbox"]:focus,
+label:focus input[type="checkbox"]{
+  outline: none;
 }
